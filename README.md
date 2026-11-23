@@ -1,29 +1,22 @@
 # Календарь звонков
 
-
 [![hexlet-check](https://github.com/Mineclinee/ai-for-developers-project-386/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Mineclinee/ai-for-developers-project-386/actions)
 
-Разработайте совместно с ИИ сервис для бронирования календаря
+Минимальная версия учебного проекта. В ней есть главная страница и запуск в Docker с портом из `PORT`.
 
 Учебный проект Хекслета: https://ru.hexlet.io/programs/ai-for-developers
 Как это должно работать: https://files.hexlet.app/a/2ipc5m
 
-## Стек
-
-- Разное
-
-## Установка
-
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
+## Запуск
 
 ```bash
 git clone https://github.com/Mineclinee/ai-for-developers-project-386.git
 cd ai-for-developers-project-386
+docker build -t hexlet-call-calendar .
+docker run --rm -e PORT=8080 -p 8080:8080 hexlet-call-calendar
 ```
 
-## Использование
-
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+Главная страница доступна по адресу [http://localhost:8080](http://localhost:8080). Для запуска без Docker используйте `node server.mjs`.
 
 ---
 
